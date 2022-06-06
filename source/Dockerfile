@@ -28,6 +28,7 @@ RUN apt-get update && apt-get --no-install-recommends -y install build-essential
         default-libmysqld-dev \
         dpkg-sig \
         libexpat1-dev \
+        libnetfilter-queue1 \
         &&  rm -rf /var/lib/apt/lists/*
 
 # build nDPI which is required by ntopng
